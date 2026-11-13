@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portal do Aluno — Colégio Sanquim</title>
+  <meta name="description" content="Acesse notas, horários, tarefas e comunicados do Colégio Sanquim." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style-aluno.css" />
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <header class="topo">
+    <div class="container topo-conteudo">
+      <a href="#" class="logo">
+        <span class="logo-marca">S</span>
+        <span class="logo-texto">
+          <small>Colégio</small>
+          <strong>Sanquim</strong>
+        </span>
+      </a>
+
+      <nav class="menu">
+        <a href="#" class="ativo">Início</a>
+        <a href="#">Boletim</a>
+        <a href="#">Horários</a>
+        <a href="#">Tarefas</a>
+        <a href="#">Comunicados</a>
+      </nav>
+
+      <div class="acoes">
+        <button class="icone-btn" aria-label="Buscar"><i data-lucide="search"></i></button>
+        <button class="icone-btn" aria-label="Notificações">
+          <i data-lucide="bell"></i><span class="ponto"></span>
+        </button>
+        <div class="avatar">AL</div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- Boas-vindas -->
+    <section class="boas-vindas">
+      <div class="cartao-amarelo">
+        <div>
+          <p class="data">Sexta-feira, 6 de novembro</p>
+          <h1>Bom dia,<br />Ana Luiza!</h1>
+          <p class="subtitulo">9º ano B · Ensino Fundamental. Você tem 5 aulas hoje e 2 tarefas para entregar.</p>
+        </div>
+        <div class="resumo">
+          <div class="resumo-item"><strong>8,4</strong><span>Média geral</span></div>
+          <div class="resumo-item"><strong>96%</strong><span>Frequência</span></div>
+          <div class="resumo-item"><strong>2</strong><span>Tarefas</span></div>
+        </div>
+      </div>
+
+      <div class="foto">
+        <img src="sanquim-hero.jpg" alt="Alunos caminhando no pátio do Colégio Sanquim" />
+        <div class="foto-legenda">
+          <small>Destaque da semana</small>
+          <strong>Feira de Ciências — inscreva seu projeto!</strong>
+        </div>
+      </div>
+    </section>
+
+    <!-- Acesso rápido -->
+    <section class="secao">
+      <h2>Acesso rápido</h2>
+      <div class="atalhos">
+        <a href="#" class="atalho"><span class="atalho-icone"><i data-lucide="graduation-cap"></i></span><strong>Boletim</strong><span>Notas e frequência</span></a>
+        <a href="#" class="atalho"><span class="atalho-icone"><i data-lucide="clock"></i></span><strong>Horários</strong><span>Grade semanal</span></a>
+        <a href="#" class="atalho"><span class="atalho-icone"><i data-lucide="clipboard-list"></i></span><strong>Tarefas</strong><span>2 pendentes</span></a>
+        <a href="#" class="atalho"><span class="atalho-icone"><i data-lucide="library"></i></span><strong>Biblioteca</strong><span>Livros e reservas</span></a>
+        <a href="#" class="atalho"><span class="atalho-icone"><i data-lucide="calendar-days"></i></span><strong>Calendário</strong><span>Provas e eventos</span></a>
+        <a href="#" class="atalho"><span class="atalho-icone"><i data-lucide="message-square"></i></span><strong>Secretaria</strong><span>Fale com a escola</span></a>
+      </div>
+    </section>
+
+    <!-- Aulas e comunicados -->
+    <section class="secao duas-colunas">
+      <div class="painel">
+        <div class="painel-topo">
+          <h2>Aulas de hoje</h2>
+          <a href="#">Ver grade</a>
+        </div>
+        <ul class="aulas">
+          <li><span class="hora">07:30</span><div><strong>Matemática</strong><small>Prof. Ricardo · Sala 12</small></div></li>
+          <li class="agora"><span class="hora">08:20</span><div><strong>Português</strong><small>Profª. Helena · Sala 12</small></div><span class="selo">Agora</span></li>
+          <li><span class="hora">09:30</span><div><strong>Biologia</strong><small>Prof. Marcos · Lab. 2</small></div></li>
+          <li><span class="hora">10:20</span><div><strong>História</strong><small>Profª. Cláudia · Sala 12</small></div></li>
+          <li><span class="hora">11:10</span><div><strong>Educação Física</strong><small>Prof. André · Quadra</small></div></li>
+        </ul>
+      </div>
+
+      <div class="painel">
+        <div class="painel-topo">
+          <h2>Comunicados</h2>
+          <a href="#">Ver todos</a>
+        </div>
+        <ul class="comunicados">
+          <li>
+            <span class="etiqueta">Evento</span>
+            <div><strong>Feira de Ciências 2026</strong><p>Inscrições dos projetos abertas até 14/11 na secretaria.</p></div>
+            <small>Hoje</small>
+          </li>
+          <li>
+            <span class="etiqueta">Aviso</span>
+            <div><strong>Reunião de pais e mestres</strong><p>Sábado, 21/11, às 9h no auditório principal.</p></div>
+            <small>Ontem</small>
+          </li>
+          <li>
+            <span class="etiqueta">Biblioteca</span>
+            <div><strong>Novos livros no acervo</strong><p>Chegaram 40 títulos novos de literatura brasileira.</p></div>
+            <small>03/11</small>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Próximas avaliações -->
+    <section class="secao">
+      <div class="painel-topo">
+        <h2>Próximas avaliações</h2>
+        <a href="#">Calendário →</a>
+      </div>
+      <div class="provas">
+        <div class="prova"><div class="dia"><strong>10</strong><span>NOV</span></div><div><strong>Matemática</strong><small>Prova bimestral</small></div></div>
+        <div class="prova"><div class="dia"><strong>12</strong><span>NOV</span></div><div><strong>Química</strong><small>Trabalho em grupo</small></div></div>
+        <div class="prova"><div class="dia"><strong>17</strong><span>NOV</span></div><div><strong>Inglês</strong><small>Prova oral</small></div></div>
+        <div class="prova"><div class="dia"><strong>19</strong><span>NOV</span></div><div><strong>Geografia</strong><small>Prova bimestral</small></div></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="rodape">
+    <div class="container rodape-conteudo">
+      <div class="logo">
+        <span class="logo-marca pequeno">S</span>
+        <strong>Colégio Sanquim</strong>
+      </div>
+      <p>Educando com luz desde 1987 · Portal do Aluno</p>
+    </div>
+  </footer>
+
+  <script>lucide.createIcons();</script>
+  <script src="script-aluno.js"></script>
+</body>
+</html>

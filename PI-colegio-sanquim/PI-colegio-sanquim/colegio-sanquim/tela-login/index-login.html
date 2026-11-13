@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login | Colégio Sanquim</title>
+  <meta name="description" content="Acesse o portal do Colégio Sanquim." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style-login.css" />
+</head>
+<body>
+  <div class="bg-shape shape-1"></div>
+  <div class="bg-shape shape-2"></div>
+
+  <main class="login-card">
+    <!-- Imagem superior -->
+    <header class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <div class="logo">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 3 1 9l11 6 9-4.91V17h2V9L12 3z" />
+            <path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z" />
+          </svg>
+        </div>
+        <h1>Colégio Sanquim</h1>
+        <p>Educação que ilumina o futuro</p>
+      </div>
+    </header>
+
+    <!-- Formulário -->
+    <section class="form-area">
+      <h2>Bem-vindo de volta!</h2>
+      <p class="subtitle">Entre com seus dados para acessar o portal.</p>
+
+      <form id="loginForm" novalidate>
+        <div class="field">
+          <label for="usuario">E-mail ou matrícula</label>
+          <div class="input-wrap">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10zm0 2c-4.42 0-8 2.24-8 5v3h16v-3c0-2.76-3.58-5-8-5z"/></svg>
+            <input type="text" id="usuario" name="usuario" placeholder="seu@email.com" autocomplete="username" />
+          </div>
+          <span class="error" id="erroUsuario"></span>
+        </div>
+
+        <div class="field">
+          <label for="senha">Senha</label>
+          <div class="input-wrap">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 8h-1V6A5 5 0 0 0 7 6v2H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2zM9 6a3 3 0 0 1 6 0v2H9V6zm3 11a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"/></svg>
+            <input type="password" id="senha" name="senha" placeholder="••••••••" autocomplete="current-password" />
+            <button type="button" class="toggle-pass" id="togglePass" aria-label="Mostrar senha">
+              <svg id="eyeIcon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5C7 5 2.73 8.11 1 12c1.73 3.89 6 7 11 7s9.27-3.11 11-7c-1.73-3.89-6-7-11-7zm0 12a5 5 0 1 1 0-10 5 5 0 0 1 0 10zm0-8a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"/></svg>
+            </button>
+          </div>
+          <span class="error" id="erroSenha"></span>
+        </div>
+
+        <div class="options">
+          <label class="remember">
+            <input type="checkbox" id="lembrar" />
+            <span class="checkmark"></span>
+            Lembrar de mim
+          </label>
+          <a href="#" class="forgot" id="esqueciSenha">Esqueci minha senha</a>
+        </div>
+
+        <button type="submit" class="btn-login" id="btnLogin">
+          <span class="btn-text">Entrar</span>
+          <span class="spinner" aria-hidden="true"></span>
+        </button>
+
+        <div class="message" id="mensagem" role="status"></div>
+      </form>
+
+      <p class="footer-text">© <span id="ano"></span> Colégio Sanquim · Todos os direitos reservados</p>
+    </section>
+  </main>
+
+  <script src="script-login.js"></script>
+</body>
+</html>
